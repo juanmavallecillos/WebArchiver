@@ -1,0 +1,33 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>webArchiver</title>
+	<!--
+	<link rel="stylesheet" href="resources/css/style.css">
+	<script src="resources/js/myScript.js"></script>
+	-->
+</head>
+<body>
+	<h1>Specify URL to be downloaded: </h1>
+	<form method="get" action="/crawler">
+		<table>
+			<tr>
+				<td>URI: </td>
+				<td><input type="url" name="url" id="url" size="60" required pattern="https?://.+" title="Include http://" ></td>
+			</tr>
+			<tr>
+				<td>recLevel: </td>
+				<td><input type="text" name="recLevel" id="recLevel" required ></td>
+			</tr>
+			<tr>
+				<td>maxFiles: </td>
+				<td><input type="text" name="maxFiles" id="maxFiles" required ></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Download"></td>
+				<td><input type="reset" value="Clear Form"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
